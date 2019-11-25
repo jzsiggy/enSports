@@ -1,1 +1,21 @@
-<h1>Dashboard</h1>
+<link rel="stylesheet" href="stylesheets/dashboard.css">
+<div class="container">
+  <h1>Dashboard</h1>
+
+  <form action="/newPost" method="post">
+    <label for="post">What`s on your mind?</label>
+    <input type="text" name="text">
+    <button type="submit">Submit</button>
+  </form>
+
+  {{#each posts}}
+    <div class="post-container">
+      <div class="upper">
+        <div class="username">{{this.posterUsername}}</div>
+        <div class="date">{{this.createdAt}}</div>
+      </div>
+      <div class="content">{{this.text}}</div>
+    </div>
+  {{/each}}
+
+</div>

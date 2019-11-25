@@ -79,3 +79,10 @@ video {
   height: 80%;
   border-radius: 20px;
 }
+
+@media only screen and (max-width: 600px) 
+{ 
+  .hero > span {
+    font-size: 2rem;
+  }
+}

@@ -17,6 +17,11 @@ const confirmUser = (request, response, next) => {
       request.session.user = updatedUser;
       response.redirect('/dashboard');
     });
+  })
+  .catch(err => {
+    response.render('authentication/signup', {
+      errorMessage: "We were unnable to confirm your account",
+    });
   });
 };
 

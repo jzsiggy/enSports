@@ -1,5 +1,12 @@
+const { Post } = require('../../models');
+
 const renderBoard = (request, response, next) => {
-  response.render("dashboard");
+  Post.find({ })
+  .then(postList => {
+    response.render("dashboard", {
+      posts : postList,
+    });
+  });
 };
 
 module.exports = {

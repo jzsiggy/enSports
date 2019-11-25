@@ -9,9 +9,14 @@ const {
   createUser,
   loginUser,
   ensureLoggedIn,
+  ensureLoggedOut,
   logoutUser,
   confirmUser,
 } = require('./authenticationControllers');
+
+const {
+  createNewPost,
+} = require('./contentControllers');
 
 module.exports = {
   renderHome,
@@ -21,6 +26,8 @@ module.exports = {
   createUser,
   loginUser,
   ensureLoggedIn,
+  ensureLoggedOut,
   logoutUser,
   confirmUser,
+  createNewPost,
 };

@@ -24,8 +24,12 @@
   <div class="navbar">
     <div class="logo"></div>
     <div class="menu">
-      <div><a href="/login">login</a></div>
-      <div><a href="/signup">signup</a></div>
+      {{#if @session.user}}
+        <div><a href="/logout">logout</a></div>
+      {{else}}
+        <div><a href="/signup">signup</a></div>
+        <div><a href="/login">login</a></div>
+      {{/if}}
     </div>
   </div>
   {{{ body }}}
