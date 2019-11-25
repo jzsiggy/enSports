@@ -36,7 +36,7 @@ const createUser = (request, response, next) => {
           sendMail(
             newUser.email,
             "Confirm your email",
-            `http://127.0.0.1:3000/confirm/${verificator._id}`
+            `https://gentle-badlands-03406.herokuapp.com/confirm/${verificator._id}`
           );
         });
         response.render("authentication/signup", {
