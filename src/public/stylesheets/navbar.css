@@ -1,0 +1,48 @@
+* {
+  /* border: red solid 1px; */
+}
+
+.navbar {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  background-image: url('/images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  margin-left: 5%;
+  height: 70%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > div {
+  transform: background-size 0.01s ease;
+  margin-right: 70px;
+  padding: 5px 10px 5px 10px;
+
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  transition: 0.3s ease all;
+
+}
+
+.menu > div:hover {
+  background-size: 100% 100%;
+  border-radius: 3px;
+}
+
+.menu > div > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

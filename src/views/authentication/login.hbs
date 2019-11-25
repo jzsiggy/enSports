@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/stylesheets/form.css">
+
+<div class="container">
+  <h1>Welcome Back!</h1>
+
+  <form action='/login' method='post'>
+    <label for='username'>Username</label>
+    <input type='text' name='username' id='username-input'>
+
+    <label for='password'>Password</label>
+    <input type='password' name='password' id='password-input'>
+
+    <button type='submit' class="underline">Sign In</button>
+  </form>
+
+  {{#if errorMessage}}
+    <p>{{ errorMessage }}</p>
+  {{/if}}
+</div>
