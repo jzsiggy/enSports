@@ -11,3 +11,12 @@ body {
   background-size: 100% 0.2em;
   background-position: 0 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    height: 40px;
+  }
+}

@@ -82,7 +82,25 @@ video {
 
 @media only screen and (max-width: 600px) 
 { 
+  .hero {
+    margin-top: -30%;
+  }
+
   .hero > span {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    width: 80%;
+  }
+
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff; 
+  }
+
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff; 
   }
 }
