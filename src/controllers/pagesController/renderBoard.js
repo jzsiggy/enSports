@@ -13,7 +13,7 @@ const renderBoard = (request, response, next) => {
                           postDate.getSeconds() ;
     });
     response.render("dashboard", {
-      posts : postList,
+      posts : postList.reverse(),
     });
   });
 };
