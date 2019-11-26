@@ -67,17 +67,70 @@ video {
 }
 
 .features-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(50, 54, 57, 1);
 }
 .features {
+  margin: 10% 0;
   background-color: rgba(32, 33, 36, 1);
   width: 80%;
   height: 80%;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.feature {
+  padding: 10% 0;
+  width: 27%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature > * {
+  padding: 5% 0;
+}
+
+.feat-img {
+  transition: ease 0.3s all;
+  height: 75px;
+  width: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.feat-img:hover {
+  transform: scale(1.1);
+}
+
+.feat-img-1 {
+  background-image: url('/images/Icons/png/016-observatory.png');
+}
+
+.feat-img-2 {
+  background-image: url('/images/Icons/png/030-world.png');
+}
+
+.feat-img-3 {
+  background-image: url('/images/Icons/png/026-stars.png');
+}
+
+.download-btn {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) 
@@ -102,5 +155,17 @@ video {
 
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #fff; 
+  }
+}
+
+
+@media only screen and (max-width: 1000px) 
+{ 
+  .features {
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 80%;
   }
 }
