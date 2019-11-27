@@ -36,7 +36,7 @@ const createUser = (request, response, next) => {
           sendMail(
             newUser.email,
             "Confirm your email",
-            `https://gentle-badlands-03406.herokuapp.com/confirm/${verificator._id}`
+            `https://ensports.herokuapp.com/confirm/${verificator._id}`
           );
         });
         response.render("authentication/signup", {
