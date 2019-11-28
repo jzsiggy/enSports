@@ -22,6 +22,27 @@ video {
   min-height: 100%;
 }
 
+.down-arrow {
+  display: block;
+  position: absolute;
+  left: 20px;
+  background-image: url('/images/down-arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
 .menu > div > a {
   color: white;
 }
